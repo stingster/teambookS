@@ -23,6 +23,6 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Jersey Web Application</servlet-name>
-		<url-pattern>/teambook/*</url-pattern>
+		<url-pattern>/MotivateR/*</url-pattern>
 	</servlet-mapping>
 </web-app>
