@@ -10,16 +10,15 @@ public class DaoFactory
 	private static BasicDataSource connPool;
 	private static DAOPlayerImpl daoPlayer;
 
-	public static void initConnPool()
+	static
 	{
 		connPool = new BasicDataSource();
 		connPool.setDriverClassName("com.mysql.jdbc.Driver");
-		connPool.setUrl("jdbc:mysql://localhost:3306/motivater");
+		connPool.setUrl("jdbc:mysql://localhost:3306/teambook");
 		connPool.setUsername("root");
 		connPool.setPassword("password");
-		connPool.setMaxIdle(4);
-		connPool.setInitialSize(4);
-		//connPool.setMaxTotal(10);
+		connPool.setMaxIdle(2);
+		connPool.setInitialSize(2);
 	}
 
 	public static DAOPlayerImpl getDAOPlayer()
