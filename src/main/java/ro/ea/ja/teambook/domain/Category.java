@@ -16,7 +16,6 @@ public class Category
 	private int stars;
 	private Type type;
 	private List<Activity> activities;
-	private int noOfActions;
 
 	public synchronized int getStars()
 	{
@@ -55,23 +54,12 @@ public class Category
 		this.activities = activities;
 	}
 
-	public synchronized int getNoOfActions()
-	{
-		return noOfActions;
-	}
-
-	public synchronized void setNoOfActions(int noOfActions)
-	{
-		this.noOfActions = noOfActions;
-	}
-
 	@Override
 	public int hashCode()
 	{
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((activities == null) ? 0 : activities.hashCode());
-		result = prime * result + noOfActions;
 		result = prime * result + stars;
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
@@ -94,13 +82,12 @@ public class Category
 		}
 		else if (!activities.equals(other.activities))
 			return false;
-		if (noOfActions != other.noOfActions)
-			return false;
 		if (stars != other.stars)
 			return false;
 		if (type != other.type)
 			return false;
 		return true;
 	}
+
 
 }
