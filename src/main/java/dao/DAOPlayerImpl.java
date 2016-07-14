@@ -17,7 +17,7 @@ public class DAOPlayerImpl implements DAOPlayer
 	}
 
 	@Override
-	public Player getPlayers()
+	public List<Player> getPlayers()
 	{
 		// TODO Auto-generated method stub
 		return null;

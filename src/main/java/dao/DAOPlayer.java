@@ -12,7 +12,7 @@ public interface DAOPlayer
 	// !READ! METHODS
 	
 	Player getPlayer(String email, String password);
-	Player getPlayers();
+	List<Player> getPlayers();
 
 
 	// !UPDATE! METHODS

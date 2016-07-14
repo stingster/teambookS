@@ -13,6 +13,11 @@ enum Type
 @XmlRootElement
 public class Category
 {
+	public enum Type
+	{
+		HEALTH, SOCIAL, TECH, SELFDEV
+	}
+	
 	private int stars;
 	private Type type;
 	private List<Activity> activities;
